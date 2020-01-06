@@ -12,7 +12,17 @@ public class MathUtilities {
      * @return the factorial of the number
      */
     public Integer factorial(Integer number) {
-        return null;
+        int res = 1;
+        if(number==0){
+            return res;
+        }
+        else{
+
+            for(int x=number; x>0 ; x--){
+                res*=x;
+            }
+        }
+        return res;
     }
 
     /**
@@ -23,7 +33,7 @@ public class MathUtilities {
      * @return the sum of the two numbers
      */
     public Integer add(Integer baseValue, Integer valueToAdd) {
-        return null;
+        return baseValue+valueToAdd;
     }
 
     /**
@@ -34,7 +44,7 @@ public class MathUtilities {
      * @return the sum of the two numbers
      */
     public Double add(Double baseValue, Double valueToAdd) {
-        return null;
+        return baseValue+valueToAdd;
     }
 
     /**
@@ -44,7 +54,7 @@ public class MathUtilities {
      * @return the half of the number in double
      */
     public Double half(Integer number) {
-        return null;
+        return ((double)number / 2);
     }
 
     /**
@@ -54,7 +64,10 @@ public class MathUtilities {
      * @return true if the number is odd, false if it is even
      */
     public Boolean isOdd(Integer number) {
-        return null;
+        if(number%2==0){
+            return true;
+        }
+        return false;
     }
 
 
@@ -65,7 +78,7 @@ public class MathUtilities {
      * @return the result of the number multiply by itself
      */
     public Integer square(Integer number) {
-        return null;
+        return number*number;
     }
 
 }
